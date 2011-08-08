@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="browsers" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="identification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="userAgent" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="header" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="capability" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="userAgent">
+    <xs:complexType>
+      <xs:attribute name="match" type="xs:string" />
+      <xs:attribute name="nonMatch" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:attribute name="match" type="xs:string" />
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="nonMatch" type="xs:string" />
+      <xs:attribute name="value" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="capability">
+    <xs:complexType>
+      <xs:attribute name="match" type="xs:string" />
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="nonMatch" type="xs:string" />
+      <xs:attribute name="value" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="capture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="userAgent" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="header" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="capability" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="capabilities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="capability" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="controlAdapters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="adapter" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="adapterType" type="xs:string" />
+            <xs:attribute name="controlType" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="markupTextWriterType" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sampleHeaders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="header" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="browsers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="identification" />
+        <xs:element ref="userAgent" />
+        <xs:element ref="header" />
+        <xs:element ref="capability" />
+        <xs:element ref="capture" />
+        <xs:element ref="capabilities" />
+        <xs:element ref="controlAdapters" />
+        <xs:element ref="sampleHeaders" />
+        <xs:element name="browser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="identification" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capture" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capabilities" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="controlAdapters" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="sampleHeaders" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="parentID" type="xs:string" />
+            <xs:attribute name="refID" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="gateway">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="identification" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capture" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capabilities" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="controlAdapters" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="sampleHeaders" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="parentID" type="xs:string" />
+            <xs:attribute name="refID" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="defaultBrowser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="identification" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capture" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="capabilities" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="controlAdapters" minOccurs="0" maxOccurs="1" />
+              <xs:element ref="sampleHeaders" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="parentID" type="xs:string" />
+            <xs:attribute name="refID" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
