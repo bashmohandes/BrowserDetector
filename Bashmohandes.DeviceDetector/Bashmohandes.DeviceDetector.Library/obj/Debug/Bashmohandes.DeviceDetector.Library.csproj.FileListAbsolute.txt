@@ -1,5 +1,0 @@
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Library\bin\Debug\Bashmohandes.DeviceDetector.Library.dll
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Library\bin\Debug\Bashmohandes.DeviceDetector.Library.pdb
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Library\obj\Debug\ResolveAssemblyReference.cache
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Library\obj\Debug\Bashmohandes.DeviceDetector.Library.dll
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Library\obj\Debug\Bashmohandes.DeviceDetector.Library.pdb

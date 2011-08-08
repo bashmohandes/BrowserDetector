@@ -1,8 +1,0 @@
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\bin\Release\mobile.browser
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\bin\Release\Bashmohandes.DeviceDetector.ConsoleApp.exe
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\bin\Release\Bashmohandes.DeviceDetector.ConsoleApp.pdb
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\bin\Release\Bashmohandes.DeviceDetector.Library.dll
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\bin\Release\Bashmohandes.DeviceDetector.Library.pdb
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\obj\x86\Release\ResolveAssemblyReference.cache
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\obj\x86\Release\Bashmohandes.DeviceDetector.ConsoleApp.exe
-D:\Code\BrowserDetector\Bashmohandes.DeviceDetector\Bashmohandes.DeviceDetector.Console\obj\x86\Release\Bashmohandes.DeviceDetector.ConsoleApp.pdb
